@@ -15,8 +15,7 @@ Version: 1.0.0 - 14.06.2018 *//* --
     font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
 
-    .xoo-wsc-icon-basket1::before {
-    content: "\e903";
+    .xoo-wsc-icon-basket1::before { content: "\e903";}
 } */
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Open+Sans:300,400,600,700,800|Roboto:300,400,400i,500,700,900');
