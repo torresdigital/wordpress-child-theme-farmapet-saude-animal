@@ -92,7 +92,14 @@ html .woocommerce-loop-product__title {
     position: relative;
     display: block;
 }
-.home .product.type-product {padding: 10px 5px !important}
+/*Produto na Home*/
+.home .product.type-product, .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+
+    padding: 10px 5px;
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+
+}
 #calcular-frete-loader {position: relative; top: -32px; border: 8px solid #14e630;
     border-top: 8px solid #0eaa21;
 
