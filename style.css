@@ -15,14 +15,17 @@ Version: 1.0.0 - 14.06.2018 *//* --
     font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
 
-    .xoo-wsc-icon-basket1::before { content: "\e903";}
+    .xoo-wsc-icon-basket1::before {
+    content: "\e903";
 } */
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Open+Sans:300,400,600,700,800|Roboto:300,400,400i,500,700,900');
 
- body p {font-family: "Open Sans", sans-serif; font-style: normal  } html * {  -webkit-text-size-adjust: 100%;  -moz-osx-font-smoothing: unset;
-    text-rendering: optimizelegibility;
+html a:active, html a:hover, html a:focus { outline: 0; }  body p {font-family: "Open Sans", sans-serif; font-style: normal  } html * {  -webkit-text-size-adjust: 100%;  -moz-osx-font-smoothing: unset; text-rendering: optimizelegibility;
 }
+
+
+.top-bar .widget_contact ul li a {color:#063702;font-size: 14px;}
 
 .main-navigation a {
     color: #002006;
@@ -40,6 +43,7 @@ Version: 1.0.0 - 14.06.2018 *//* --
 .is-sticky #sticky-header {
     background-color: rgba(255, 255, 255, 0.9);
 }
+
 
 .go-to-top {bottom: 125px;}
 .text-left {text-align: left;}
@@ -80,7 +84,7 @@ html .woocommerce-loop-product__title {
 
 .button.product_type_simple.add_to_cart_button.ajax_add_to_cart,
 .woocommerce ul.products li.product .button, .button.product_type_simple {
-    width: 50%;
+    width: 63%;
     text-align: center;
     font-weight: 600;
     border-radius: 50px;
@@ -88,14 +92,33 @@ html .woocommerce-loop-product__title {
     position: relative;
     display: block;
 }
+.home .product.type-product {padding: 10px 5px !important}
+#calcular-frete-loader {position: relative; top: -32px; border: 8px solid #14e630;
+    border-top: 8px solid #0eaa21;
+
+}
+
+.shipping-calculator-button {
+    display: none !important;
+}
+
 /*Hover dos Produtos*/
-.product.type-product:hover {
-    -webkit-transform: translateY(-1px);
+.home .product.type-product:hover {
     transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
     -webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     box-shadow: 0 8px 24px
-    rgba(0,0,0,0.1);
+        rgba(0,0,0,0.1);
+    transition: all 550ms ease-out;
+    border-radius: 30px;
+
+    animation: shadow-pulse 1s infinite;
+    cursor: pointer;
+    box-shadow: 0 0 0
+    rgba(204,169,44, 0.4);
 }
+
+
 
 .wpmenucart-icon-shopping-cart-0::before {content: "\f07a";font-size: 22px;}
 .site-info {background: url("/wp-content/uploads/2018/10/blue-background-green-ii.jpg")}
