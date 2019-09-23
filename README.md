@@ -1,4 +1,4 @@
-Theme Name: Farmapet - by Torres Digital® 🎩
+Theme Name: Farmapet Saúde Animal - by Torres Digital® 🎩
 
 Theme URI: http://www.torresdigital.com.br/
 
