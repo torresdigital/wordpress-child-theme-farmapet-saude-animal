@@ -26,8 +26,13 @@ html * {  -webkit-text-size-adjust: 100%;  -moz-osx-font-smoothing: unset; text-
     font-weight: 600;
 }
 
-.menu-toggle {animation: shadow-pulse 1s infinite;
-    box-shadow: 0 0 0 rgba(204,169,44, 0.4);}
+/*Animation*/
+.menu-toggle, .button.xoo-wsc-cart.btn  {animation: shadow-pulse 1s infinite; box-shadow: 0 0 0 rgba(204,169,44, 0.4);}
+
+.button.xoo-wsc-cart.btn {
+    border-radius: 30px;
+    font-weight: 600;
+}
 
 
 .top-bar .widget_contact ul li a {color:#063702;font-size: 14px;}
@@ -153,7 +158,8 @@ html .woocommerce-loop-product__title {
 
 /*Produto na Home*/
 .product.type-product,
-.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product,
+.related.products .product.type-product {
 
     padding: 10px 5px;
     -webkit-transition: all 250ms ease-out;
@@ -161,19 +167,17 @@ html .woocommerce-loop-product__title {
 
 }
 /*Hover dos Produtos*/
-.home .product.type-product:hover, .archive .product.type-product:hover {
+.home .product.type-product:hover, .archive .product.type-product:hover, .related.products .product.type-product:hover {
     transform: translateY(-1px);
     -webkit-transform: translateY(-1px);
     -webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    box-shadow: 0 8px 24px
-        rgba(0,0,0,0.1);
-        rgba(0,0,0,0.1);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+
     transition: all 550ms ease-out;
     border-radius: 30px;
 
     animation: shadow-pulse 1s infinite;
-    box-shadow: 0 0 0
-    rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0  rgba(204,169,44, 0.4);
 }
 #calcular-frete-loader {position: relative; top: -32px; border: 8px solid #14e630;
     border-top: 8px solid #0eaa21;
