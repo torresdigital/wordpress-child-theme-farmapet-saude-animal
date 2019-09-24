@@ -21,11 +21,17 @@ Version: 1.0.0 - 14.06.2018 *//* --
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Open+Sans:300,400,600,700,800|Roboto:300,400,400i,500,700,900');
 
-html a:active, html a:hover, html a:focus { outline: 0; }  body p {font-family: "Open Sans", sans-serif; font-style: normal  } html * {  -webkit-text-size-adjust: 100%;  -moz-osx-font-smoothing: unset; text-rendering: optimizelegibility;
+html a:active, html a:hover, html a:focus { outline: 0; }  body p {font-family: "Open Sans", sans-serif; font-style: normal  }
+html * {  -webkit-text-size-adjust: 100%;  -moz-osx-font-smoothing: unset; text-rendering: optimizelegibility;} .showlogin, .showcoupon { display: none; } .woocommerce-form.woocommerce-form-login.login {
+    font-weight: 600;
 }
+
+.menu-toggle {animation: shadow-pulse 1s infinite;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);}
 
 
 .top-bar .widget_contact ul li a {color:#063702;font-size: 14px;}
+
 
 .main-navigation {
     float: none;
@@ -79,6 +85,13 @@ html .top-bar .top-bar-menu a {
 #torresdigital-copy-id img {width: 14%;  max-width:initial; position: relative; display: inline-block; margin: 30px auto}
 
 /*Woocommerce*/
+.woocommerce-shipping-totals.shipping .button {
+    width: 100%;
+    border-radius: 30px;
+    animation: shadow-pulse 1s infinite;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    font-weight: 600;
+}
 .woocommerce-Price-amount.amount {
     color: #085f46;
     font-size: 18px;
@@ -437,7 +450,7 @@ a:focus, a:active, a:hover {
     position: relative;
     display: inline-block;
     bottom: 45px;
-        }
+    }
 
         .main-slider .flex-control-nav {
     text-align: center;
@@ -447,22 +460,28 @@ a:focus, a:active, a:hover {
     bottom: 80px;
     z-index: 99;
     margin: 30px auto;
-            display: none;
-        }
+    display: none;
+    }
 
-    html .slider-content {  top: -4%; }
-
-        .btn-default.vivid {
-    margin: 12px auto;
-        }
-
-
-
+    html .slider-content {  top: -4%; } .btn-default.vivid { margin: 12px auto; }
 
 }
 
+/* Medium Devices, Desktops */
+	@media only screen and (max-width : 1024px) {
+
+       html .wrap, html .boxed-layout #page, html .boxed-layout-small #page, #site-title a img { width: 95%; }
+
+}
+
+
+
 	/* Medium Devices, Desktops */
 	@media only screen and (max-width : 992px) {
+
+        .top-bar .top-bar-menu {
+    float: initial;
+}
 
 	}
 
