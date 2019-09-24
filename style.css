@@ -29,7 +29,7 @@ html a:active, html a:hover, html a:focus { outline: 0; }  body p {font-family: 
 
 .main-navigation {
     float: none;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     width: 100%;
     position: relative;
     display: inline-block;
@@ -37,17 +37,35 @@ html a:active, html a:hover, html a:focus { outline: 0; }  body p {font-family: 
     text-align: center;
 }
 
+
+.is-sticky #sticky-header .nav-site-title {
+    display: inline-block;
+    float: initial;
+    padding: 0;
+    position: relative;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
 .main-navigation a {
     color: #002006;
     display: block;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 12.5px;
     font-weight: 600;
     letter-spacing: 0.1em;
     line-height: 45px;
     padding: 0 10px;
     text-align: left;
     text-transform: initial;
+}
+
+html .top-bar .top-bar-menu a {
+    font-size: 12.5px;
+    text-transform: capitalize;
+    color: #063702;
 }
 
 .is-sticky #sticky-header {
@@ -159,7 +177,7 @@ html .woocommerce-loop-product__title {
 
 
 
-.wpmenucart-icon-shopping-cart-0::before {content: "\f07a";font-size: 22px;}
+.wpmenucart-icon-shopping-cart-0::before {content: "\f07a";font-size: 18px;}
 .site-info {background: url("/wp-content/uploads/2018/10/blue-background-green-ii.jpg")}
 .wpmenucart-icon-shopping-cart-0, li.wpmenucartli a.wpmenucart-contents span {color: #00A859;}
 [class*=" xoo-wsc-icon-"], [class^="xoo-wsc-icon-"] {font-family: 'FontAwesome';font-weight: 900;}
@@ -413,10 +431,7 @@ a:focus, a:active, a:hover {
 
     .wrap, .boxed-layout #page, .boxed-layout-small #page { max-width: 1175px !important;}
 
-        #torresdigital-copy-id img {
-    width: 18%;
-    max-width: initial;
-        }
+        #torresdigital-copy-id img {  width: 15%; max-width: initial; }
 
         .flex-control-nav.flex-control-paging {
     position: relative;
