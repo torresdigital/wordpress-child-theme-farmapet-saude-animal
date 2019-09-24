@@ -27,6 +27,16 @@ html a:active, html a:hover, html a:focus { outline: 0; }  body p {font-family: 
 
 .top-bar .widget_contact ul li a {color:#063702;font-size: 14px;}
 
+.main-navigation {
+    float: none;
+    margin: 0 auto 30px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    left: 0;
+    text-align: center;
+}
+
 .main-navigation a {
     color: #002006;
     display: block;
@@ -92,7 +102,48 @@ html .woocommerce-loop-product__title {
     position: relative;
     display: block;
 }
-.home .product.type-product {padding: 10px 5px !important}
+
+.widget-title {
+
+    border-radius: 30px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-style: inherit;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: unset;
+    text-rendering: optimizelegibility;
+    font-weight: 600;
+    color:
+
+    #00572e;
+
+}
+
+
+/*Produto na Home*/
+.product.type-product,
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+
+    padding: 10px 5px;
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+
+}
+/*Hover dos Produtos*/
+.home .product.type-product:hover, .archive .product.type-product:hover {
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+    -webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 24px
+        rgba(0,0,0,0.1);
+        rgba(0,0,0,0.1);
+    transition: all 550ms ease-out;
+    border-radius: 30px;
+
+    animation: shadow-pulse 1s infinite;
+    box-shadow: 0 0 0
+    rgba(204,169,44, 0.4);
+}
 #calcular-frete-loader {position: relative; top: -32px; border: 8px solid #14e630;
     border-top: 8px solid #0eaa21;
 
@@ -102,21 +153,9 @@ html .woocommerce-loop-product__title {
     display: none !important;
 }
 
-/*Hover dos Produtos*/
-.home .product.type-product:hover {
-    transform: translateY(-1px);
-    -webkit-transform: translateY(-1px);
-    -webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    box-shadow: 0 8px 24px
-        rgba(0,0,0,0.1);
-    transition: all 550ms ease-out;
-    border-radius: 30px;
 
-    animation: shadow-pulse 1s infinite;
-    cursor: pointer;
-    box-shadow: 0 0 0
-    rgba(204,169,44, 0.4);
-}
+
+
 
 
 
@@ -267,7 +306,7 @@ html .slider-content .slider-title, html .slider-content .slider-title a {
     color: #fff;
 
 }
-a, ul li a:hover, ol li a:hover, .top-bar .top-bar-menu a:hover, .top-bar .widget_contact ul li a:hover, .main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .main-navigation li.current-menu-ancestor.menu-item-has-children > a::after, .main-navigation li.current-menu-item.menu-item-has-children > a::after, .main-navigation ul li:hover > a::after, .main-navigation li.menu-item-has-children > a:hover::after, .main-navigation li.page_item_has_children > a:hover::after, .main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover, .header-search:hover, .header-search-x:hover, .entry-title a:hover, .entry-title a:focus, .entry-title a:active, .entry-meta .author a, .entry-meta span:hover, .entry-meta a:hover, .cat-links, .cat-links a, .tag-links, .tag-links a, .image-navigation .nav-links a, .widget ul li a:hover, .widget-title a:hover, .widget_contact ul li a:hover, .site-info .copyright a:first-child, .site-info .copyright a:hover, #colophon .widget ul li a:hover, #footer-navigation a:hover {
+a, ul li a:hover, ol li a:hover, .top-bar .top-bar-menu a:hover, .top-bar .widget_contact ul li a:hover, .main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .main-navigation li.current-menu-ancestor.menu-item-has-children > a::after, .main-navigation li.current-menu-item.menu-item-has-children > a::after, .main-navigation ul li:hover > a::after, .main-navigation li.menu-item-has-children > a:hover::after, .main-navigation li.page_item_has_children > a:hover::after, .main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover, .header-search:hover, .header-search-x:hover, .entry-title a:hover, .entry-title a:focus, .entry-title a:active, .entry-meta .author a, .entry-meta span:hover, .entry-meta a:hover, .cat-links, .cat-links a, .tag-links, .tag-links a, .image-navigation .nav-links a, .widget ul li a:hover, .main-navigation a:hover, .widget_contact ul li a:hover, .site-info .copyright a:first-child, .site-info .copyright a:hover, #colophon .widget ul li a:hover, #footer-navigation a:hover {
 
     color: #2dcc70;
 
