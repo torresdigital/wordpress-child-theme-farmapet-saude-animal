@@ -163,6 +163,15 @@ html .woocommerce-loop-product__title {
 
 }
 
+/*Carrinho*/
+.woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled] {
+    background:
+    #dbdbdb;
+    border-radius: 30px;
+    top: 12px;
+    position: relative;
+}
+
 
 /*Produto na Home*/
 .product.type-product,
@@ -179,13 +188,15 @@ html .woocommerce-loop-product__title {
     transform: translateY(-1px);
     -webkit-transform: translateY(-1px);
     -webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-
+    box-shadow: 0 8px 24px
+        rgba(0,0,0,0.1);
+        rgba(0,0,0,0.1);
     transition: all 550ms ease-out;
     border-radius: 30px;
 
     animation: shadow-pulse 1s infinite;
-    box-shadow: 0 0 0  rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0
+    rgba(204,169,44, 0.4);
 }
 #calcular-frete-loader {position: relative; top: -32px; border: 8px solid #14e630;
     border-top: 8px solid #0eaa21;
@@ -456,28 +467,28 @@ a:focus, a:active, a:hover {
 
     .wrap, .boxed-layout #page, .boxed-layout-small #page { max-width: 1175px !important;}
 
-        #torresdigital-copy-id img {  width: 15%; max-width: initial; }
+        #torresdigital-copy-id img {
+    width: 15%;
+    max-width: initial;
+        }
 
         .flex-control-nav.flex-control-paging {
-    position: relative;
+    }
     display: inline-block;
     bottom: 45px;
-    }
+        }
 
         .main-slider .flex-control-nav {
     text-align: center;
     line-height: 0;
     position: relative;
     width: auto;
-    bottom: 80px;
-    z-index: 99;
-    margin: 30px auto;
     display: none;
     }
 
     html .slider-content {  top: -4%; } .btn-default.vivid { margin: 12px auto; }
 
-}
+
 
 /* Medium Devices, Desktops */
 	@media only screen and (max-width : 1024px) {
@@ -488,12 +499,15 @@ a:focus, a:active, a:hover {
 
 
 
-	/* Medium Devices, Desktops */
-	@media only screen and (max-width : 992px) {
+
+}
 
         .top-bar .top-bar-menu {
     float: initial;
 }
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
 
 	}
 
