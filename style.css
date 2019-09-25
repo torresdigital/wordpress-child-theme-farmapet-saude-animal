@@ -509,7 +509,16 @@ a:focus, a:active, a:hover {
 	/* Medium Devices, Desktops */
 	@media only screen and (max-width : 992px) {
 
-	}
+        .top-bar .widget_contact {
+
+    display: inline-block;
+    float: initial;
+    margin: 0;
+    position: relative;
+
+    }
+
+}
 
 	/* Small Devices, Tablets */
 	@media only screen and (max-width : 768px) {
